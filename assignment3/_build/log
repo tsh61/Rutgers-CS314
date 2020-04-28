@@ -1,0 +1,123 @@
+# dune runtest -f
+# OCAMLPARAM: unset
+# Workspace root: /Users/tian/Desktop/CS314/assignment3
+$ /usr/bin/getconf _NPROCESSORS_ONLN > /var/folders/_d/w56mj7fj7b153m3l_9pyrrfh0000gn/T/dune1b78b2.output 2> /dev/null
+# Auto-detected concurrency: 4
+# disable binary cache
+$ /usr/local/bin/ocamlc.opt -config > /var/folders/_d/w56mj7fj7b153m3l_9pyrrfh0000gn/T/dune5aef1c.output
+# Dune context:
+#  { name = "default"
+#  ; kind = "default"
+#  ; profile = Release
+#  ; merlin = true
+#  ; for_host = None
+#  ; fdo_target_exe = None
+#  ; build_dir = "default"
+#  ; toplevel_path = Some External "/Users/tian/.opam/default/lib/toplevel"
+#  ; ocaml_bin = External "/usr/local/bin"
+#  ; ocaml = External "/Users/tian/.opam/default/bin/ocaml"
+#  ; ocamlc = External "/usr/local/bin/ocamlc.opt"
+#  ; ocamlopt = Some External "/usr/local/bin/ocamlopt.opt"
+#  ; ocamldep = External "/usr/local/bin/ocamldep.opt"
+#  ; ocamlmklib = External "/usr/local/bin/ocamlmklib.opt"
+#  ;
+#  env =
+#    map
+#      { "DUNE_CONFIGURATOR" : "/usr/local/bin/ocamlc.opt"
+#      ; "INSIDE_DUNE" : "1"
+#      ;
+#      "MANPATH" :
+#        "/Users/tian/Desktop/CS314/assignment3/_build/install/default/bin"
+#      ;
+#      "OCAMLFIND_IGNORE_DUPS_IN" :
+#        "/Users/tian/Desktop/CS314/assignment3/_build/install/default/lib"
+#      ;
+#      "OCAMLPATH" :
+#        "/Users/tian/Desktop/CS314/assignment3/_build/install/default/lib"
+#      ; "OCAML_COLOR" : "always"
+#      ; "OPAMCOLOR" : "always"
+#      }
+#  ; findlib_path = [ External "/Users/tian/.opam/default/lib" ]
+#  ; arch_sixtyfour = true
+#  ; natdynlink_supported = true
+#  ; supports_shared_libraries = true
+#  ; opam_vars = map {}
+#  ;
+#  ocaml_config =
+#    { version = "4.08.1"
+#    ; standard_library_default = "/usr/local/lib/ocaml"
+#    ; standard_library = "/usr/local/lib/ocaml"
+#    ; standard_runtime = "the_standard_runtime_variable_was_deleted"
+#    ; ccomp_type = "cc"
+#    ; c_compiler = "clang"
+#    ; ocamlc_cflags = [ "-O2"; "-fno-strict-aliasing"; "-fwrapv" ]
+#    ; ocamlopt_cflags = [ "-O2"; "-fno-strict-aliasing"; "-fwrapv" ]
+#    ;
+#    bytecomp_c_compiler =
+#      [ "clang"
+#      ; "-O2"
+#      ; "-fno-strict-aliasing"
+#      ; "-fwrapv"
+#      ; "-D_FILE_OFFSET_BITS=64"
+#      ; "-D_REENTRANT"
+#      ]
+#    ; bytecomp_c_libraries = [ "-lm"; "-lpthread" ]
+#    ;
+#    native_c_compiler =
+#      [ "clang"
+#      ; "-O2"
+#      ; "-fno-strict-aliasing"
+#      ; "-fwrapv"
+#      ; "-D_FILE_OFFSET_BITS=64"
+#      ; "-D_REENTRANT"
+#      ]
+#    ; native_c_libraries = [ "-lm" ]
+#    ; cc_profile = [ "-pg" ]
+#    ; architecture = "amd64"
+#    ; model = "default"
+#    ; int_size = 63
+#    ; word_size = 64
+#    ; system = "macosx"
+#    ; asm = [ "clang"; "-arch"; "x86_64"; "-Wno-trigraphs"; "-c" ]
+#    ; asm_cfi_supported = true
+#    ; with_frame_pointers = false
+#    ; ext_exe = ""
+#    ; ext_obj = ".o"
+#    ; ext_asm = ".s"
+#    ; ext_lib = ".a"
+#    ; ext_dll = ".so"
+#    ; os_type = "Unix"
+#    ; default_executable_name = "a.out"
+#    ; systhread_supported = true
+#    ; host = "x86_64-apple-darwin19.0.0"
+#    ; target = "x86_64-apple-darwin19.0.0"
+#    ; profiling = true
+#    ; flambda = false
+#    ; spacetime = false
+#    ; safe_string = false
+#    ; exec_magic_number = "Caml1999X025"
+#    ; cmi_magic_number = "Caml1999I025"
+#    ; cmo_magic_number = "Caml1999O025"
+#    ; cma_magic_number = "Caml1999A025"
+#    ; cmx_magic_number = "Caml1999Y025"
+#    ; cmxa_magic_number = "Caml1999Z025"
+#    ; ast_impl_magic_number = "Caml1999M025"
+#    ; ast_intf_magic_number = "Caml1999N025"
+#    ; cmxs_magic_number = "Caml1999D025"
+#    ; cmt_magic_number = "Caml1999T025"
+#    ; natdynlink_supported = true
+#    ; supports_shared_libraries = true
+#    ; windows_unicode = false
+#    }
+#  ;
+#  which =
+#    map
+#      { "ocaml" : Some External "/Users/tian/.opam/default/bin/ocaml"
+#      ; "ocamlc" : Some External "/usr/local/bin/ocamlc.opt"
+#      ; "ocamlobjinfo" : Some External "/usr/local/bin/ocamlobjinfo.opt"
+#      }
+#  }
+$ (cd _build/default/test && ./public.exe)
+> ...............
+> Ran: 15 tests in: 0.12 seconds.
+> OK
