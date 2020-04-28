@@ -1,3 +1,0 @@
-(tests
-  (names public student)
-  (libraries asn1 oUnit qcheck))
